@@ -1,0 +1,102 @@
+{
+  "bytes": 33344,
+  "count_of_rows": 113,
+  "hash": "fa93a3263060d6439380a6c051559b42",
+  "name": "london-public-transport",
+  "profile": "data-package",
+  "resources": [
+    {
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "encoding": "utf-8",
+      "format": "csv",
+      "mediatype": "text/xls",
+      "name": "london-public-transport",
+      "path": "data/public-transport-journeys.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Period and Financial year",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "Reporting Period",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "Days in period",
+            "type": "integer"
+          },
+          {
+            "format": "%Y-%m-%dT%H:%M:%S",
+            "name": "Period beginning",
+            "type": "datetime"
+          },
+          {
+            "format": "%Y-%m-%dT%H:%M:%S",
+            "name": "Period ending",
+            "type": "datetime"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Bus journeys (m)",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Underground journeys (m)",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "DLR Journeys (m)",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Tram Journeys (m)",
+            "type": "number"
+          },
+          {
+            "format": "default",
+            "name": "Overground Journeys (m)",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "Emirates Airline Journeys (m)",
+            "type": "any"
+          },
+          {
+            "format": "default",
+            "name": "TfL Rail Journeys (m)",
+            "type": "any"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ],
+  "title": "London public journeys by type of transport"
+}
