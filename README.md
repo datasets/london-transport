@@ -22,11 +22,14 @@ To update the data run the process script locally:
 
 ```
 # Install dataflows
-pip install dataflows
+pip install -r scripts/requirements.txt
 
 # Run the script
-python london-data.py:
+python scripts/london_public_transport_journeys.py:
 ```
+
+## Automation
+Up-to-date (auto-updates every month) london-transport dataset could be found on the datahub.io: https://datahub.io/core/london-transport
 
 ### Licence
 
