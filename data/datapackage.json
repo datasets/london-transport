@@ -1,7 +1,7 @@
 {
   "bytes": 30248,
   "count_of_rows": 187,
-  "hash": "9ba6557b93cba55a2486320ad596d4cd",
+  "hash": "1e2d0df14bd62db52c89c8d8e9254e0a",
   "name": "london-public-transport",
   "profile": "data-package",
   "resources": [
@@ -20,7 +20,7 @@
       "format": "csv",
       "hash": "8c2cfdde971c91542f139b5b35c1a6d2",
       "name": "london-public-transport",
-      "path": "data\\public-transport-journeys.csv",
+      "path": "data/public-transport-journeys.csv",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
