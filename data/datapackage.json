@@ -1,11 +1,12 @@
 {
-  "bytes": 33344,
-  "count_of_rows": 113,
-  "hash": "fa93a3263060d6439380a6c051559b42",
+  "bytes": 30248,
+  "count_of_rows": 187,
+  "hash": "9ba6557b93cba55a2486320ad596d4cd",
   "name": "london-public-transport",
   "profile": "data-package",
   "resources": [
     {
+      "bytes": 30248,
       "dialect": {
         "caseSensitiveHeader": false,
         "delimiter": ",",
@@ -17,64 +18,56 @@
       },
       "encoding": "utf-8",
       "format": "csv",
-      "mediatype": "text/xls",
+      "hash": "8c2cfdde971c91542f139b5b35c1a6d2",
       "name": "london-public-transport",
-      "path": "data/public-transport-journeys.csv",
+      "path": "data\\public-transport-journeys.csv",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
           {
             "format": "default",
             "name": "Period and Financial year",
-            "type": "string"
+            "type": "any"
           },
           {
             "format": "default",
             "name": "Reporting Period",
-            "type": "integer"
+            "type": "any"
           },
           {
             "format": "default",
             "name": "Days in period",
-            "type": "integer"
+            "type": "any"
           },
           {
-            "format": "%Y-%m-%dT%H:%M:%S",
+            "format": "default",
             "name": "Period beginning",
-            "type": "datetime"
+            "type": "any"
           },
           {
-            "format": "%Y-%m-%dT%H:%M:%S",
+            "format": "default",
             "name": "Period ending",
-            "type": "datetime"
+            "type": "any"
           },
           {
-            "decimalChar": ".",
             "format": "default",
-            "groupChar": "",
             "name": "Bus journeys (m)",
-            "type": "number"
+            "type": "any"
           },
           {
-            "decimalChar": ".",
             "format": "default",
-            "groupChar": "",
             "name": "Underground journeys (m)",
-            "type": "number"
+            "type": "any"
           },
           {
-            "decimalChar": ".",
             "format": "default",
-            "groupChar": "",
             "name": "DLR Journeys (m)",
-            "type": "number"
+            "type": "any"
           },
           {
-            "decimalChar": ".",
             "format": "default",
-            "groupChar": "",
             "name": "Tram Journeys (m)",
-            "type": "number"
+            "type": "any"
           },
           {
             "format": "default",
@@ -83,7 +76,7 @@
           },
           {
             "format": "default",
-            "name": "Emirates Airline Journeys (m)",
+            "name": "London Cable Car Journeys (m)",
             "type": "any"
           },
           {
