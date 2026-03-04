@@ -1,49 +1,33 @@
 name: Update london-transport data
 
 on:
-  # Schedule to run on the 1st day of each month
   schedule:
     - cron: '0 0 1 * *'
+  workflow_dispatch:
 
-  # Run on push to main branch
-  push:
-    branches:
-      - main
-
-  # Run on pull requests targeting the main branch
-  pull_request:
-    branches:
-      - main
-
-  # Allows manual triggering of the workflow
-  workflow_dispatch: 
+permissions:
+  contents: write
 
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
-
-    if: github.ref == 'refs/heads/main'
 
     steps:
     - name: Check out repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Set up Python 3.12
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.12'
 
     - name: Install Python dependencies
       run: |
-          python -m venv venv
-          source venv/bin/activate
           pip install --upgrade pip
           pip install -r scripts/requirements.txt
 
     - name: Run scripts
-      run: |
-        source venv/bin/activate
-        python scripts/london_public_transport_journeys.py
+      run: python scripts/london_public_transport_journeys.py
 
     - name: Configure Git
       run: |
