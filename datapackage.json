@@ -1,0 +1,98 @@
+{
+  "name": "london-transport",
+  "title": "London public journeys by type of transport",
+  "description": "Number of journeys on London's public transport network by TfL reporting period and transport mode.",
+  "profile": "data-package",
+  "licenses": [
+    {
+      "name": "Open Government Licence v3.0",
+      "path": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "title": "Open Government Licence v3.0"
+    }
+  ],
+  "sources": [
+    {
+      "name": "London Datastore",
+      "path": "https://data.london.gov.uk",
+      "title": "London Datastore"
+    }
+  ],
+  "resources": [
+    {
+      "name": "london-public-transport",
+      "path": "data/data/public-transport-journeys.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "profile": "tabular-data-resource",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Period and Financial year",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "Reporting Period",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "Days in period",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "Period beginning",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "Period ending",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "Bus journeys (m)",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "Underground journeys (m)",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "DLR Journeys (m)",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "Tram Journeys (m)",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "Overground Journeys (m)",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "London Cable Car Journeys (m)",
+            "type": "any",
+            "format": "default"
+          },
+          {
+            "name": "TfL Rail Journeys (m)",
+            "type": "any",
+            "format": "default"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    }
+  ],
+  "version": "0.1.0"
+}
