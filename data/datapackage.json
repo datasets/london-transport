@@ -1,12 +1,12 @@
 {
-  "bytes": 33321,
-  "count_of_rows": 210,
-  "hash": "feafd6c6bca926e2acc32c7d86e32e6c",
+  "bytes": 33729,
+  "count_of_rows": 209,
+  "hash": "51275c9713d80962490eadf75cbb089d",
   "name": "london-public-transport",
   "profile": "data-package",
   "resources": [
     {
-      "bytes": 33321,
+      "bytes": 33729,
       "dialect": {
         "caseSensitiveHeader": false,
         "delimiter": ",",
@@ -18,7 +18,7 @@
       },
       "encoding": "utf-8",
       "format": "csv",
-      "hash": "dca382645db483e45f62a27b3a54cb4d",
+      "hash": "4f88deccd15289f5c39bb5489592bfb0",
       "name": "london-public-transport",
       "path": "data/public-transport-journeys.csv",
       "profile": "tabular-data-resource",
