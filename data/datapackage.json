@@ -1,12 +1,12 @@
 {
-  "bytes": 33729,
-  "count_of_rows": 209,
-  "hash": "51275c9713d80962490eadf75cbb089d",
+  "bytes": 34712,
+  "count_of_rows": 221,
+  "hash": "0113cf4b6aeeb21054be03585e2cd657",
   "name": "london-public-transport",
   "profile": "data-package",
   "resources": [
     {
-      "bytes": 33729,
+      "bytes": 34712,
       "dialect": {
         "caseSensitiveHeader": false,
         "delimiter": ",",
@@ -18,7 +18,7 @@
       },
       "encoding": "utf-8",
       "format": "csv",
-      "hash": "4f88deccd15289f5c39bb5489592bfb0",
+      "hash": "63a7f86f9f7ecec796f52488ecdb0523",
       "name": "london-public-transport",
       "path": "data/public-transport-journeys.csv",
       "profile": "tabular-data-resource",
@@ -27,27 +27,27 @@
           {
             "format": "default",
             "name": "Period and Financial year",
-            "type": "any"
+            "type": "string"
           },
           {
             "format": "default",
             "name": "Reporting Period",
-            "type": "any"
+            "type": "integer"
           },
           {
             "format": "default",
             "name": "Days in period",
-            "type": "any"
+            "type": "integer"
           },
           {
-            "format": "default",
+            "format": "%Y-%m-%dT%H:%M:%S",
             "name": "Period beginning",
-            "type": "any"
+            "type": "datetime"
           },
           {
-            "format": "default",
+            "format": "%Y-%m-%dT%H:%M:%S",
             "name": "Period ending",
-            "type": "any"
+            "type": "datetime"
           },
           {
             "format": "default",
